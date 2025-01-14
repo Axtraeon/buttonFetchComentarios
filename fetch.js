@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     // Obtener el botón que ya está en el HTML
-    const button = document.getElementById('show-comments');
+    const button = document.getElementById('mostrar-comentarios');
     
     // Obtener el post
     fetch('https://jsonplaceholder.typicode.com/posts/1')
@@ -18,13 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
             div.appendChild(h1);
             div.appendChild(p);
 
-            /* En caso de que quisieramos crear el botón desde JavaScript
+            /*
+            //En caso de que quisieramos crear el botón desde JavaScript
             // Crear el botón para mostrar comentarios
             let button = document.createElement('button');
             button.textContent = "Mostrar comentarios";
-            button.id = "show-comments";
+            button.id = "mostrar-comentarios";
             div.appendChild(button);
-            */
+            */    
 
             // Agregar evento click al botón
             button.addEventListener('click', () => {
